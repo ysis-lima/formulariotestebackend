@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Formulário</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <a href="https://luisdavidantaurcomeza.github.io/siteinicialLindaura/" class="back-button">Voltar</a>
+  <header>
+    <h1>Feira dos Cursos Técnicos</h1>
+    <h2> Colégio Prof. Lindaura Ribeiro Lucas</h2>
+  </header>
+  <div class="principal">
+    <main>
+      <fieldset>
+        <form action="create" method="POST">
+          <legend>Seus dados</legend>
+          <label for="nome">Nome completo:</label><br>
+          <input type="text" id="nome" name="nome" required><br><br>
+
+          <legend style="color: black;">O que você é?</legend>
+
+          <label for="aluno" class="label"><input class="padrao" type="radio" value="aluno" name="categoria" id="aluno">Aluno</label>
+          <label for="pai" class="label"><input class="padrao" type="radio" value="pai" name="categoria" id="pai"> Pai/Mãe</label>
+          <label for="responsável" class="label"><input class="padrao" type="radio" value="responsável" name="categoria" id="responsável">Responsável</label>
+          <label for="visitante" class="label"><input class="padrao" type="radio" value="visitante" name="categoria" id="visitante">Visitante</label>
+
+          <label for="hora" class="label">Horário de chegada:</label>
+          <input class="padrao" type="text" id="hora" name="hora" required placeholder="XX:XX">
+
+          <input type="submit" value="Enviar">
+        </form>
+      </fieldset>
+    </main>
+  </div>
+</body>
+
+</html>
